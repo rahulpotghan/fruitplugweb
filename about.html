@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>fruitplug| Web Design &amp; Development from Seattle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic%7CRoboto:900,400' rel='stylesheet'
+          type='text/css'>
+    <link rel="stylesheet" href="build/base.css">
+    <link rel="stylesheet" href="build/layout.css">
+    <link rel="stylesheet" href="build/modules.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.viewportchecker.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //Set margin for content container
+            var margin = $('.extra').css('height');
+            $('#content-wrap').css('margin-bottom', margin);
+
+            //Check when map ¬item is in view
+            $('.strategy').viewportChecker({
+                classToAdd: 'in-view', // Class to add to the elements when they are visible,
+                classToAddForFullView: 'in-full-view', // Class to add when an item is completely visible in the viewport
+                classToRemove: 'invisible', // Class to remove before adding 'classToAdd' to the elements
+                removeClassAfterAnimation: false, // Remove added classes after animation has finished
+                offset: '25%',
+                invertBottomOffset: false, // Add the offset as a negative number to the element's bottom
+                repeat: false, // Add the possibility to remove the class if the elements are not visible
+                callbackFunction: function (elem, action) {
+//                    $('.port-wide.in-view').addClass('move');
+                },
+                scrollHorizontal: false // Set to true if your website scrolls horizontal instead of vertical.
+            });
+
+
+        });
+    </script>
+</head>
+
+<body>
+<div id="content-wrap">
+    <!--  Top Section
+    ******************************************-->
+    <header class="container-wide" id="top-inner">
+        <div class="container">
+            <div id="logo">
+                <a href="index.html"><img src="images/logo.png" alt="84colors"/></a>
+            </div>
+            <nav role="navigation">
+                <ul>
+                    <li class="selected"><a href="about.html">About</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="contact.php.html">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--  Intro Section
+    ******************************************-->
+    <section class="container-wide">
+        <div class="container page-title">
+            <h1>about<span>.</span></h1>
+            <h2>I’m Neal. I am individual freelancer and I help individuals, companies  build amazing apps, websites and services that are
+                simple, beautiful and easy to use.</h2>
+        </div>
+    </section>
+
+    <!--  Content Section
+    ******************************************-->
+    <section class="container-wide" id="content">
+        <div class="container-sm">
+            <h2>Design + Development</h2>
+            <p>Freelancer expert in custom web development, mobile apps (iOS and Android</p>
+
+            <p>This means I can support your project at any stage it needs it. From strategy and brainstorming ideas, to
+                defining the user experience, to interface design, to development, I love bringing great ideas to life
+                no matter the screen size or platform.</p>
+        </div>
+
+        <!--<div class="container-wide pad-md">
+            <img src="images/strategy.png" alt="strategy" class="strategy-img img-responsive"/>
+            <div class="strategy">
+                <div class="strategy-item str-prod">
+                    <div class="strategy-item-img">
+                        <svg id="icon-prod" width="60" height="71" viewBox="0 0 71 78" xmlns="http://www.w3.org/2000/svg"><title>Group</title><g transform="translate(-7.000000, 0.000000)" stroke="#9B9B9B" stroke-width="2" fill="none" fill-rule="evenodd"><ellipse cx="42.5" cy="39" rx="16.5" ry="39"/><circle cx="43" cy="39" r="6"/><ellipse transform="translate(42.500000, 39.000000) rotate(-300.000000) translate(-42.500000, -39.000000)" cx="42.5" cy="39" rx="16.5" ry="39"/><ellipse transform="translate(42.500000, 39.000000) scale(-1, 1) rotate(-300.000000) translate(-42.500000, -39.000000)" cx="42.5" cy="39" rx="16.5" ry="39"/></g></svg>
+
+                    </div>
+                    <div class="strategy-item-label">Product Strategy</div>
+                </div>
+                <div class="strategy-item str-ux">
+                    <div class="strategy-item-img">
+                        <svg width="60" height="68" viewBox="0 0 60 68" xmlns="http://www.w3.org/2000/svg"><title>Group</title><g stroke="#979797" stroke-width="2" fill="none" fill-rule="evenodd"><path d="M10.215 22.372c.434.347 1.232.628 1.783.628h28.004c.55 0 .998-.445.998-1V8c0-.552-.447-1-.998-1H11.998c-.55 0-1.354.285-1.783.628l-8.43 6.744c-.434.347-.43.913 0 1.256l8.43 6.744zM49.785 42.372c-.434.347-1.232.628-1.783.628H19.998c-.55 0-.998-.445-.998-1V28c0-.552.447-1 .998-1h28.004c.55 0 1.354.285 1.783.628l8.43 6.744c.434.347.43.913 0 1.256l-8.43 6.744z"/><path d="M28 47v20M28 1v2" stroke-linecap="square"/></g></svg>
+                    </div>
+                    <div class="strategy-item-label">User Experience</div>
+                </div>
+                <div class="strategy-item str-ui">
+                    <div class="strategy-item-img">
+                        <svg width="61" height="60" viewBox="0 0 61 60" xmlns="http://www.w3.org/2000/svg"><g stroke-width="2" stroke="#9B9B9B" fill="none" fill-rule="evenodd"><path d="M48.2066635 56.2844559L39.6786852 72.0624929C39.1395447 73.0341772 38.2707253 73.030018 37.7329682 72.0624929L29.2066635 56.2844559 29.2066635 1.80550943C29.2066635 1.2555357 29.6575889.809693901 30.2014347.809693901L47.2118924.809693901C47.7612893.809693901 48.2066635 1.26049149 48.2066635 1.80550943L48.2066635 56.2844559zM34.5 10.6715729L34.5 52.6815712M42.5 10.6715729L42.5 52.6815712" transform="rotate(-45 31.743 41.207)"/><path d="M35.2356037 10.5857864L29.1802337 10.5857864 29.1802337 54.8990722 34.5164385 53.0761493 38.0387759 57.1109517C38.2935029 57.742706 38.705049 57.7454218 38.9604313 57.1109517L42.483497 53.0761068 48.1752701 54.8990722 48.1752708 10.5857864 41.7643963 10.5857864 35.2356037 10.5857864 35.2356037 10.5857864 35.2356037 10.5857864zM.292893219 34.7071068L37.7928932 72.2071068" transform="rotate(-45 31.743 41.207)"/></g></svg>
+                    </div>
+                    <div class="strategy-item-label">Visual Design</div>
+                </div>
+                <div class="strategy-item str-dev">
+                    <div class="strategy-item-img">
+                        <svg width="71" height="54" viewBox="0 0 71 54" xmlns="http://www.w3.org/2000/svg"><title>gears2</title><g stroke-width="2" stroke="#979797" fill="none" fill-rule="evenodd"><g transform="translate(2 11.045)"><path d="M.047 19.036c.02-.23.28-.53.5-.583l4.4-1.064c.853-.208 1.713-.99 1.98-1.777l.547-1.334c.385-.794.33-1.957-.127-2.71l-2.36-3.873c-.113-.188-.08-.56.03-.688L6.946 5.07c.154-.138.546-.172.722-.065l3.858 2.37c.732.45 1.985.48 2.65.15l1.33-.554c.83-.287 1.61-1.15 1.817-2.008L18.38.55c.053-.224.352-.484.58-.504.017 0 .54-.046 1.313-.046.774 0 1.296.046 1.313.047.228.02.527.28.58.503l1.06 4.415c.206.856.985 1.72 1.77 1.99l1.33.55c.77.38 1.967.32 2.697-.128l3.857-2.37c.175-.107.59-.05.686.03l1.93 1.936c.144.165.176.536.063.724L33.2 11.57c-.46.753-.513 1.918-.15 2.66l.55 1.338c.287.833 1.146 1.616 2 1.823l4.4 1.063c.222.054.48.354.5.583 0 .017.046.542.046 1.318 0 .777-.045 1.3-.047 1.318-.02.23-.28.53-.5.584l-4.4 1.063c-.854.206-1.713.99-1.98 1.775l-.548 1.335c-.385.792-.33 1.956.127 2.71l2.36 3.87c.112.19.08.563-.03.69l-1.93 1.937c-.09.082-.256.134-.423.134-.117 0-.225-.024-.296-.068l-3.857-2.37c-.73-.448-1.984-.48-2.65-.15l-1.33.554c-.83.286-1.61 1.15-1.815 2.008l-1.06 4.415c-.053.223-.352.483-.58.503-.02 0-.54.046-1.315.046-.774 0-1.296-.047-1.313-.05-.228-.02-.527-.28-.58-.5l-1.06-4.418c-.206-.856-.987-1.72-1.77-1.988l-1.328-.55c-.345-.17-.762-.257-1.208-.257-.556 0-1.085.137-1.49.387l-3.857 2.37c-.176.106-.593.048-.686-.03l-1.93-1.938c-.144-.165-.176-.536-.063-.725l2.36-3.873c.458-.75.512-1.916.15-2.66l-.552-1.336c-.285-.832-1.145-1.615-2-1.822L.547 22.256c-.223-.054-.48-.355-.5-.584 0-.017-.047-.54-.047-1.318 0-.776.046-1.3.047-1.318z"/><ellipse cx="20.04" cy="20.059" rx="8.35" ry="8.358"/></g><g transform="rotate(13 23.424 205.593)"><path d="M.338 11.397l2.717-.656c.527-.127 1.058-.61 1.223-1.096l.338-.825c.238-.49.205-1.21-.078-1.674L3.08 4.754c-.07-.116-.05-.347.02-.425L4.29 3.13c.095-.084.337-.105.445-.04L7.12 4.557c.45.278 1.225.297 1.635.092l.822-.34c.512-.178.994-.71 1.122-1.242L11.35.34c.033-.14.218-.3.36-.312.01 0 .332-.028.81-.028.478 0 .8.028.81.03.14.012.326.172.36.31l.654 2.726c.127.53.608 1.064 1.092 1.23l.82.34c.478.233 1.217.197 1.668-.08l2.382-1.463c.11-.066.365-.032.424.02l1.19 1.194c.09.102.11.33.04.447l-1.457 2.393c-.283.464-.316 1.184-.092 1.643l.34.825c.177.515.708 1 1.236 1.127l2.715.655c.138.034.298.22.31.36 0 .01.028.335.028.815 0 .48-.028.803-.03.814-.01.14-.17.327-.308.36l-2.717.657c-.527.128-1.058.612-1.223 1.097l-.338.824c-.238.49-.205 1.208.078 1.674l1.458 2.39c.07.118.05.348-.02.427l-1.19 1.196c-.056.05-.158.084-.26.084-.073 0-.14-.016-.184-.043l-2.384-1.463c-.45-.276-1.225-.296-1.636-.092l-.823.342c-.512.177-.994.71-1.12 1.24l-.655 2.727c-.033.138-.218.3-.36.31-.01 0-.332.03-.81.03-.478 0-.8-.03-.81-.03-.142-.012-.327-.173-.36-.31l-.654-2.728c-.128-.53-.61-1.062-1.093-1.228l-.82-.34c-.214-.104-.472-.158-.747-.158-.343 0-.67.084-.92.238l-2.383 1.464c-.108.066-.366.03-.423-.02L3.12 20.838c-.09-.102-.11-.33-.04-.448l1.458-2.393c.283-.465.316-1.184.092-1.643l-.34-.826c-.177-.514-.708-.998-1.236-1.126l-2.716-.656c-.138-.033-.297-.22-.31-.36 0-.01-.028-.334-.028-.814 0-.48.028-.804.03-.814.012-.142.17-.327.308-.36z"/><ellipse cx="12.378" cy="12.39" rx="5.157" ry="5.162"/></g></g></svg>
+                    </div>
+                    <div class="strategy-item-label">Development</div>
+                </div>
+                <div class="strategy-line"></div>
+            </div>
+        </div>
+
+        <div class="container-sm">
+            <h2>Great ideas are global. </h2>
+
+            <p>I work with clients of all sizes and profiles, located all over the world. Here's an overview of my
+                clients from the past couple of years.</p>
+        </div>
+
+        <div class="container-wide pad-md text-center map-wrap">
+            <object class="map" data="images/map.svg" type="image/svg+xml"></object>
+        </div>-->
+
+        <div class="container-sm">
+            <h2>Best and affordable with Quality work!!</h2>
+           
+        </div>
+
+        <!--<div class="container-wide" id="quotes">
+            <ul class="testimonials">
+                <li>
+                    <p>“I've worked with Cristiana regularly for the past 9-10 years; so when it came time to design a
+                        website for my side project - my winery - I was thrilled to be able to work with her again. She
+                        is a master with color and texture. Her designs are nuanced, rich and layered- a lot like a fine
+                        wine. She's a painter with a strong knowledge of the unique UI needs a web interface has- the
+                        best of both worlds.
+                    <p>I'm a designer by trade, yet I hired Cristiana to design my own business' website. That's how
+                        good she is."</p>
+						<span class="quote-author">
+							<img src="images/clients/john.jpg" alt=""/>
+							<strong>John Benedetti</strong> Sante Arcangeli Family Wines and Iluminada Design
+						</span>
+                </li>
+                <li>
+                    <p>"Cristiana has been fantastic to work with! She has been able to design a site for us that does
+                        everything we wanted functionally and used her creativity to design a site that is easy to
+                        navigate and fantastic to look at."</p>
+						<span class="quote-author">
+							<img src="images/clients/derek.jpg" alt=""/>
+							<strong>Derek Falk</strong> Falk Custom Adventures
+						</span>
+                </li>
+                <li>
+                    <p>
+                        "Cristiana delivered a home page with several additional pages that were beautiful, worked great
+                        and finished it in a timely manner. We will definitely be using her services again."
+                    </p>
+						<span class="quote-author">
+							<img src="images/clients/dave.jpg" alt=""/>
+							<strong>Dave Miller</strong> Portfolio Pathway, LLC
+						</span>
+                </li>
+                <li>
+                    <p>"I've used Cristiana to create a custom Wordpress design that was focused on increasing
+                        engagement on the homepage. We decided that customer endorsements and clear calls to action were
+                        a priority and I was highly impressed with the results.
+                    <p>I found her to be extremely helpful and would highly recommend her."</p>
+                    </p>
+						<span class="quote-author">
+							<img src="images/clients/john-gleeson.jpg" alt=""/>
+							<strong>John Gleeson</strong> Access Legal
+						</span>
+                </li>
+                <li>
+                    <p>"We are very happy with your design, and we love the combination of creativity and corporate
+                        professionalism that the page shows."
+                    </p>
+						<span class="quote-author">
+							<img src="images/clients/ankur.jpg" alt=""/>
+							<strong>Ankur Patel</strong> Motovac Group
+						</span>
+                </li>
+                <li>
+                    <p>"High quality, creative designs, delivered on time with clear communication. Very pleased with
+                        the project &amp; look forward to working with Cristiana again."
+                    </p>
+						<span class="quote-author">
+							<img src="images/clients/edith.jpg" alt=""/>
+							<strong>Edith Karnitsch</strong> Terranetwork
+						</span>
+                </li>
+                <li>
+                    <p>"Working with Cristiana at 84colors was like a breath of fresh air. She proved to be a talented,
+                        all-round designer, who delivered a stunning result in a short period of time. She was patient,
+                        polite and professional, which is why I would definitely recommend her work, and do business
+                        with her again. Thank you for a job well done!"
+                    </p>
+						<span class="quote-author">
+							<img src="images/clients/andrea.jpg" alt=""/>
+							<strong>Andrea Bosboom</strong> ProudMembers
+						</span>
+                </li>
+            </ul>
+        </div>-->
+
+        <div class="container-wide" id="get-started">
+            <div class="container-sm">
+                <span>Looking for quote or discuss project? <a href="contact.php.html">Contact me.</a></span>
+            </div>
+        </div>
+
+    </section>
+
+</div>
+
+<!--  Extra Section
+******************************************-->
+<!--
+<div class="extra" id="about-extra">
+    <div id="about-extra-heading">
+        <h4>More about me coming soon<span>.</span></h4>
+        <img src="images/rahullog.png" alt="Fruit Plug"/>
+    </div>
+    <div id="about-list">
+        <ul>
+            <li>I am based in Seattle
+            </li>
+
+            
+        </ul>
+
+    </div>
+</div>
+-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-87717465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>

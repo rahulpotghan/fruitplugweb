@@ -1,0 +1,353 @@
+/* ------------------------------------------------------------------------ */
+/*  BLOG PAGES
+/* ------------------------------------------------------------------------ */
+.blog-post {
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 0px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    border-bottom: 1px solid #ddd;
+    max-width: 700px;
+    width: 100%;
+}
+
+.blog-post:last-child {
+	border-bottom: none;
+}
+
+.article-meta {
+    width: 100%;
+}
+
+.post-single .article-meta {
+	margin-bottom: 140px;
+}
+
+.post-single .article-date {
+	text-align: center;
+	margin-top: -50px;
+}
+
+.post-single .article-body p:first-child {
+	font-size: 1.2rem;
+	font-family: "roboto", Helvetica, Arial, sans-serif;
+	color: #A3A3A7;
+}
+
+.article-meta h2 {
+    margin: 0 0 10px 0;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 36px;
+    font-family: "roboto", Helvetica, Arial, sans-serif;
+    line-height: 110%;
+}
+
+h1.post-title {
+	padding: 0 0 80px;
+	margin: 0 0 0 0;
+	font-size: 4rem;
+	text-transform: capitalize;
+}
+
+h1.post-title:after {
+	bottom: 0;
+}
+
+.article-body p {
+	font-family: "pt serif", Helvetica, Arial, sans-serif;
+	color: #333;
+	font-size: 1rem;
+	line-height: 160%;
+	margin-bottom: 2em;
+}
+
+.article-body h3 {
+	color: #333;
+	margin: 3em 0 2em;
+}
+
+.article-date {
+    margin-bottom: 30px;
+    color: #A3A3A7; 
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: "roboto", Helvetica, Arial, sans-serif;
+}
+
+.article-date a {
+    color: #868695;
+}
+
+.article-date a:hover {
+    color: #333;
+}
+
+.article-featured {
+    float: left;
+    width: 30%;
+    margin-right: -3px;
+}
+
+.article-featured img {
+    max-width: 100%;
+    height: auto;
+}
+
+.article-body {
+    margin: auto;
+}
+
+.article-wrap .article-body {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    padding-left: 60px;
+}
+
+
+/*======== Page Nav ========*/
+#page-nav {
+    margin: 0 0 60px 0;
+    padding-top: 60px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+#page-nav a {
+    padding: 0 20px;
+    color: #CE3100;
+    font-size: 13px;
+    font-weight: 900;
+    font-family: "roboto", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+#page-nav a:hover {
+    color: #222;
+}
+
+
+/*======== Individual Posts Styles ========*/
+
+.article-body h3 {
+    text-transform: capitalize;
+}
+
+.article-body ul,
+.article-body ol {
+    padding: 0 30px 60px 30px;
+}
+
+.article-body ul li,
+.article-body ol li {
+    margin: 10px 0;
+    list-style: disc;
+    font-style: italic;
+    font-family: "pt serif", Helvetica, Arial, sans-serif;
+}
+
+.tip {
+    padding: 20px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    font-style: italic;
+    font-family: "pt serif", Helvetica, Arial, sans-serif;
+}
+
+.tip ul {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+
+/*.pad-top {
+	padding-top: 100px;
+}*/
+
+.more-link {
+    display: block;
+    margin-top: 30px;
+    padding: 0;
+    font-family: "roboto", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+pre {
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 30px;
+	margin-bottom: 30px;
+	line-height: 1em;
+}
+
+/*======== Image styles ========*/
+.post-img {
+    width: 100%;
+    text-align: center;
+    margin: 2em 0;
+}
+
+.post-img img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.alignnone {
+	margin: 2em 0;
+}
+
+.article-body img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+.wp-caption {
+    width: 100% !important;
+}
+
+.wp-caption-text {
+    margin: 15px 0 40px 0 !important;
+    padding: 0 0 0 15px;
+    border-left: 1px solid #ddd;
+    color: #999;
+    font-style: italic;
+    font-size: 15px;
+    font-family: "pt serif", Helvetica, Arial, sans-serif;
+}
+
+.img-left {
+	width: 100%;
+	margin: 0 auto;
+	padding: 1em 0;
+	text-align: center;
+}
+
+.img-left img {
+	display: inline-block;
+	float: none;
+}
+
+.img-wide {
+	 mix-blend-mode: screen;
+}
+
+
+
+/*======== Comments ========*/
+.article-comments {
+	display: none;
+}
+#commentform input[type=text],
+#commentform input[type=email],
+#commentform textarea {
+    padding: 10px 15px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    background-color: rgba(256, 256, 256, 0.35);
+    color: #222;
+    font-size: 16px;
+    font-family: "roboto", Helvetica, Arial, sans-serif;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#commentform {
+    width: 600px;
+}
+
+.form-allowed-tags {
+    display: none;
+}
+
+ol.commentlist {
+    margin-bottom: 60px;
+    padding: 0;
+}
+
+ol.commentlist li {
+    padding: 20px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin: 10px 0;
+}
+
+.comment-meta {
+    margin-bottom: 20px;
+    font-style: italic;
+    font-family: "pt serif", Helvetica, Arial, sans-serif;
+}
+
+#comments {
+	margin-top: 30px;
+	padding-top: 30px;
+    /*margin-top: 80px;
+    padding-top: 0px;
+    border-top: 1px solid #ddd;*/
+}
+
+.show-comments {
+	font-size: 13px;
+	color: #A3A3A7;
+	padding: 20px 0;
+	margin-top: 30px;
+}
+
+.link-show-comments {
+	cursor: pointer;
+}
+
+.link-show-comments a {
+	color: #222;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/*
+/*      Media Queries Default: Smaller than 460px
+/*
+/*----------------------------------------------------------------------------*/
+@media screen and (max-width: 460px) {
+
+    /*======== Blog Page ========*/
+    .blog-post {
+    	padding: 30px 0;
+    }
+    
+    .article-meta h2 {
+        font-size: 1.4rem
+    }
+    
+    .article-body p {
+    	font-size: 0.9rem;
+    }
+   
+    .article-featured {
+    	width: 100%;
+    	text-align: center;
+    	margin-bottom: 2em;
+    }
+    
+    .article-wrap .article-body {
+    	width: 100%;
+    	padding: 0;
+    }
+
+    #page-nav {
+        margin-bottom: 40px;
+        padding: 40px 0 0 0;
+    }
+
+    #page-nav a {
+        font-size: 14px;
+    }
+
+}
+
+

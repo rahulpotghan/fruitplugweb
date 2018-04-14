@@ -1,0 +1,168 @@
+body,
+html {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #646473;
+    font-size: 16px;
+    font-size: 1rem;
+    font-family: roboto, Calibri, Helvetica, Arial, sans-serif;
+    line-height: 150%
+}
+
+body {
+    background-color: #f5f5f5
+}
+
+a {
+    color: #008080;
+    text-decoration: none;
+    transition: all .2s
+}
+
+a:hover {
+    color: #222
+}
+
+/*Changed to 008080 from #ce3100*/
+h1 {
+    margin: 0;
+    color: #008080; 
+    text-align: center;
+    font-size: 100.8px;
+    font-size: 6.3rem;
+    font-family: roboto, Helvetica, Arial, sans-serif;
+    line-height: 100%
+}
+
+h1,
+h2 {
+    position: relative
+}
+
+h2 {
+    margin-top: 50px;
+    color: #313131;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 50px
+}
+
+h1+h2 {
+    margin: 3em auto;
+    color: #868695;
+    text-align: center;
+    font-weight: 400;
+    font-size: 27.2px;
+    font-size: 1.7rem;
+    font-family: "pt serif", Helvetica, Arial, sans-serif;
+    line-height: 120%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    max-width: 800px
+}
+
+h1:after {
+    position: absolute;
+    bottom: -38px;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    height: 5px;
+    background-color: rgba(0, 0, 0, .05);
+    content: ''
+}
+
+h1 span,
+h2 span,
+h3 span,
+h4 span {
+    font-family: "pt serif", Helvetica, Arial, sans-serif
+}
+
+h3 {
+    line-height: 160%;
+    font-size: 16px;
+    margin: 52px 0 26px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .06em
+}
+
+h4 {
+    margin-top: 2em;
+    color: #222;
+    font-size: 19.2px;
+    font-size: 1.2rem;
+    line-height: 110%
+}
+
+p {
+    margin-top: 1.6em;
+    margin-bottom: 1.6em;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 160%;
+    direction: ltr
+}
+
+p:last-child {
+    margin-bottom: 0
+}
+
+li,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+* {
+    box-sizing: border-box
+}
+
+s {
+    text-decoration: line-through;
+    opacity: .5
+}
+
+header {
+    position: relative;
+    z-index: 1
+}
+
+@media (max-width:770px) {
+    h1 {
+        margin-top: 80px;
+        font-size: 80px
+    }
+    h1+h2 {
+        font-size: 22px
+    }
+    p {
+        font-size: 15px
+    }
+}
+
+@media (max-width:460px) {
+    h1 {
+        margin-top: 50px;
+        font-size: 50px
+    }
+    h1:after {
+        bottom: -30px;
+        left: 50%
+    }
+    h1+h2 {
+        margin: 60px 20px;
+        font-size: 18px
+    }
+    p {
+        font-size: 14px
+    }
+}
+
+
+/*# sourceMappingURL=base.css.map */
