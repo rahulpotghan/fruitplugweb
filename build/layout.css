@@ -477,12 +477,17 @@ p.p-lead {
 .in-view.img-otg {
     background-color: #00bfc9
 }
-
+.in-view.img-otg1 {
+    background-color: #00bfc9
+}
 .in-view.img-dq {
     background-color: #fbbb0b
 }
 
 .in-view.img-cfait {
+    background-color: #5854ad
+}
+.in-view.img-cfait1 {
     background-color: #5854ad
 }
 
@@ -495,6 +500,9 @@ p.p-lead {
 }
 
 .in-view.img-ewb {
+    background-color: #252632
+}
+.in-view.img-ewb1 {
     background-color: #252632
 }
 
@@ -525,8 +533,17 @@ p.p-lead {
 .in-view.img-panda {
     background-color: #eaeaea
 }
+.in-view.img-panda1 {
+    background-color: #eaeaea
+}
+.in-view.img-char {
+    background-color: #eaeaea
+}
 
 .img-otg {
+    background-color: #aa8862
+}
+.img-otg1 {
     background-color: #aa8862
 }
 
@@ -537,7 +554,9 @@ p.p-lead {
 .img-cfait {
     background-color: #27348f
 }
-
+.img-cfait1 {
+    background-color: #27348f
+}
 .img-dnsio {
     background-color: #2fb887
 }
@@ -549,6 +568,10 @@ p.p-lead {
 .img-ewb {
     background-color: #252632
 }
+.img-ewb1{
+    background-color: #252632
+}
+
 
 .img-follow {
     background-color: #0191d8
@@ -577,12 +600,20 @@ p.p-lead {
 .img-panda {
     background-color: #eaeaea
 }
-
+.img-panda1 {
+    background-color: #eaeaea
+}
+.img-char {
+    background-color: #eaeaea
+}
 .img-otg .img-source {
+    background: url("../images/portfolio/conceptart/3.jpg");
+    background-size: cover
+}
+.img-otg1 .img-source {
     background: url("../images/portfolio/frdm/frdmhome.png");
     background-size: cover
 }
-
 .img-1st .img-source {
     background: url("../images/work/1st.jpg");
     background-size: cover
@@ -599,6 +630,10 @@ p.p-lead {
 }
 
 .img-cfait .img-source {
+    background: url("../images/portfolio/mangaanime/1.jpg");
+    background-size: cover
+}
+.img-cfait1 .img-source {
     background: url("../images/portfolio/tranzip/tranzipapp2.png");
     background-size: cover
 }
@@ -614,12 +649,24 @@ p.p-lead {
 }
 
 .img-ewb .img-source {
+    background: url("../images/portfolio/storybook/2.jpg");
+    background-size: cover
+}
+.img-ewb1 .img-source {
     background: url("../images/portfolio/tempo/tempohome.png");
     background-size: cover
 }
-
 .img-panda .img-source {
+    background: url("../images/portfolio/characterdesign/1.jpg");
+    background-size: cover
+}
+.img-panda1 .img-source {
     background: url("../images/portfolio/sfpweb/sfpcombine1.png");
+    background-size: cover
+}
+
+.img-char .img-source {
+    background: url("../images/portfolio/characterdesign/1.jpg");
     background-size: cover
 }
 
@@ -714,6 +761,28 @@ p.p-lead {
 }
 
 .img-panda p {
+    color: #999
+}
+.img-panda1 .port-info h2 {
+    color: #313131
+}
+
+.img-panda1 .port-info h3 {
+    color: #666
+}
+
+.img-panda1 p {
+    color: #999
+}
+.img-char .port-info h2 {
+    color: #313131
+}
+
+.img-char .port-info h3 {
+    color: #666
+}
+
+.img-char p {
     color: #999
 }
 
